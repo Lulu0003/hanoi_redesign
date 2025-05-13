@@ -1,0 +1,54 @@
+/*************** Reset *********************/
+
+* {
+  margin: 0px;
+  padding-block: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  margin-block: 30px;
+}
+.indhold {
+  text-align: center;
+}
+
+.mad {
+  width: 100%;
+  position: relative; /* Gør det muligt at placere elementer indeni */
+}
+
+button {
+  margin-block: 20px;
+}
+
+.stemning {
+  width: 110%;
+  margin-block: 40px;
+}
+
+.overlay-text {
+  position: absolute; /* Gør det muligt at placere præcist */
+  top: 40%; /* Placerer teksten 50% ned i containeren */
+  left: 50%; /* Placerer teksten 50% inde i containeren */
+  transform: translate(-50%, -50%); /* Centrerer teksten præcist */
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Gennemsigtig baggrund for bedre læsbarhed */
+  padding: 10px 20px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
