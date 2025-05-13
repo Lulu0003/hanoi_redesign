@@ -1,0 +1,36 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** Mobil ********************/
+.flex_omhanoi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.om_container {
+  text-align: center;
+  padding: 38px;
+}
+
+.om_side,
+p,
+a,
+img {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.om_side,
+a {
+  color: rgb(164, 164, 164);
+}
