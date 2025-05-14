@@ -30,7 +30,6 @@ img {
   margin-top: 12px;
 }
 
-.om_side,
-a {
-  color: rgb(164, 164, 164);
+.om_side a {
+  color: var(--grå);
 }
