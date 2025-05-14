@@ -1,1 +1,39 @@
-/* Herinde kan vi lave hoved css */
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/***************** Variable ****************/
+html {
+  --mørkerød: #590005;
+  --rød: #a20d16;
+  --gul: #ffdf93;
+  --grøn: #9fc37a;
+  --hvid: #ffffff;
+  --grå: #797979;
+
+  --font-primary: "Amarante", sans-serif;
+  --font-text: "Pridi", serif;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+}
+
+p {
+  font-family: var(--font-text);
+  font-size: 14px;
+}
+
+a {
+  font-family: var(--font-text);
+  font-size: 16px;
+}
