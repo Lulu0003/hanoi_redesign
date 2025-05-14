@@ -1,22 +1,43 @@
+/*************** Reset *********************/
+
+* {
+  margin: 0px;
+  padding-block: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/********-*********/
+h1,
+p {
+  margin-block: 30px;
+}
+
 .indhold {
   text-align: center;
 }
 
 .socials {
   width: 50%;
-  margin-block: 20px;
+  padding-block: 5%;
+  margin: 0 auto; /* centrerer  */
 }
 
 .mad {
   width: 90%;
-  margin-block: 20px;
+  margin-block: 5%;
+  margin: 0 auto; /* centrerer  */
 }
 p {
   line-height: 2.5rem;
 }
 
 .socialp {
-  margin-top: 60px;
+  margin-block: 40px;
 }
 /********PYNT*********/
 
@@ -82,4 +103,71 @@ p {
   top: 1075px;
   right: 20px;
   background-image: url(img/pynt8.webp);
+}
+
+@media (min-width: 800px) {
+  #pynt1 {
+    width: 5%;
+    top: 650px;
+    left: 200px;
+  }
+
+  #pynt2 {
+    width: 5%;
+    top: 550px;
+    right: 200px;
+  }
+
+  #pynt3 {
+    width: 10%;
+    top: 350px;
+    left: 300px;
+  }
+
+  #pynt4 {
+    width: 10%;
+    top: 40px;
+    left: 10%;
+  }
+
+  #pynt5 {
+    width: 5%;
+    top: 1100px;
+    left: 300px;
+  }
+
+  #pynt6 {
+    width: 5%;
+    top: 100px;
+    right: 340px;
+  }
+
+  #pynt7 {
+    width: 10%;
+    top: 850px;
+    right: 300px;
+  }
+
+  #pynt8 {
+    width: 10%;
+    top: 1200px;
+    right: 200px;
+  }
+
+  .socials {
+    width: 30%;
+    padding-block: 5%;
+    margin: 0 auto; /* centrerer  */
+  }
+
+  .mad {
+    width: 70%;
+    margin-block: 5%;
+    margin: 0 auto; /* centrerer  */
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
