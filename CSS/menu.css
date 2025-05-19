@@ -1,3 +1,4 @@
+/*********************** BURGERMENU **************************/
 * {
   margin: 0;
   padding: 0;
@@ -108,5 +109,224 @@ nav {
 
   nav.active .menu a {
     font-size: 24px;
+  }
+}
+
+/********************* STYLING AF GRID 1-1 **************************/
+h1 {
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+h2 {
+  display: flex;
+  justify-content: center; /* centrerer vandret */
+  align-items: center; /* centrerer lodret */
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.startersimg {
+  display: block; /* gør det muligt at centrere med margin */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+/***************** GRID 1-1 TEKSTSTYLING ********************/
+.vandret-streg {
+  height: 1px;
+  background-color: rgb(128, 15, 15);
+  width: 100vw; /* 100% af skærmbredden */
+  margin: 40px 0;
+}
+
+/************************* GRID STYLING ****************************/
+.vandret-streg {
+  display: block; /* Vis stregen kun på mobil */
+}
+
+.grid1-1 {
+  display: flex;
+  flex-direction: column; /* under hinanden */
+  gap: 45px;
+  margin: 40px auto; /* auto = centrerer vandret */
+  text-align: center;
+  align-items: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); /* text-shadow: X-offset Y-offset blur-radius color, 2px: hvor langt til højre skyggen går
+2px: hvor langt nedad, 4px: hvor meget den bliver udtværet rgba(0, 0, 0, 0.4): farve på skyggen (her: sort med 40% gennemsigtighed) - */
+  font-size: 18px;
+}
+
+/******************** GRID_1-1 BILLEDESTYLING **********************/
+/* GRID-layout til dine retter (2 kolonner på desktop) */
+.grid_1-1 {
+  display: grid; /* Vi bruger CSS grid til layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 kolonner, hver fylder 1 del af bredden */
+  gap: 20px; /* Luft imellem kolonner og rækker */
+}
+
+/* Layout for hver mad-kort (det enkelte element i grid) */
+.grid_1-1 > div {
+  display: flex; /* Bruger flexbox til at styre indholdet i hver boks */
+  flex-direction: column; /* Sørger for, at billedet står over teksten (vertikalt) */
+  align-items: center; /* Centrerer indholdet horisontalt */
+}
+
+/* Styling til alle billeder i dine madkort */
+.grid_1-1 img {
+  max-width: 200px; /* Men aldrig mere end 250px bredt */
+}
+
+/* Styling til det store billede i toppen af sektionen */
+.startersimg {
+  width: 100%; /* Billedet fylder hele bredden af dets container */
+  height: auto; /* Bevarer billedets proportioner */
+  max-width: 400px; /* Det må dog aldrig blive bredere end 600px */
+  display: block; /* Fjerner evt. inline-space under billedet */
+  margin-bottom: 3rem;
+}
+
+.fororsrullebillede {
+  width: 265px;
+  height: 250px;
+}
+
+/******** BILLEDE UNDERTEKST ********/
+.baooverskrift {
+  font-size: 1rem;
+}
+.baounderoverskrit {
+  font-size: 0.8rem;
+}
+
+.springrolls1 {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.springrolls {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
+.rispapir {
+  font-size: 1rem;
+}
+.rispapirundertekst {
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.baguettetekst1 {
+  font-size: 1rem;
+}
+.baguettetekst {
+  font-size: 0.8rem;
+}
+
+/*************** MAIN COURSE BILLEDESTYLING **********************/
+/* Layout for hver mad-kort (det enkelte element i grid) */
+.grid_1-1-1 > div {
+  display: flex; /* Bruger flexbox til at styre indholdet i hver boks */
+  flex-direction: column; /* Sørger for, at billedet står over teksten (vertikalt) */
+  align-items: center; /* Centrerer indholdet horisontalt */
+}
+
+.maincoursebillede {
+  display: block; /* gør det muligt at centrere med margin */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45%;
+  height: auto;
+  margin-bottom: 4rem;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.grid_1-1-1 {
+  display: grid; /* Vi bruger CSS grid til layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 kolonner, hver fylder 1 del af bredden */
+  gap: 20px; /* Luft imellem kolonner og rækker */
+}
+
+.bowlbillede {
+  width: 265px;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.kødretbillede {
+  width: 265px;
+  height: auto;
+}
+
+.kødrullebillede {
+  width: 265px;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.risretbillede {
+  width: 265px;
+  height: auto;
+}
+
+/**** BILLEDE TEKST STYLING ****/
+.overskrift1 {
+  font-size: 1rem;
+}
+.ricesaladundertekst {
+  margin-bottom: 4rem;
+  font-size: 0.8rem;
+}
+
+.overskrift2 {
+  font-size: 1rem;
+}
+.noodlesoupundertekst {
+  font-size: 0.8rem;
+}
+
+.overskrift3 {
+  font-size: 1rem;
+}
+.beefwrappedundertekst {
+  font-size: 0.8rem;
+}
+
+.overskrift4 {
+  font-size: 1rem;
+}
+
+.risbtekst {
+  font-size: 0.8rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 800px) {
+  .grid1-1 {
+    flex-direction: row; /* lig på linje */
+    justify-content: center; /* centrer links */
+    align-items: center; /* centrer lodret */
+    width: 100%; /* lad den fylde */
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .vandret-streg {
+    display: none; /* Når skærmen går til desktio = skjul streger */
+  }
+
+  .starters {
+    display: none; /* h2'eren */
+  }
+
+  .startersimg {
+    display: none;
   }
 }
