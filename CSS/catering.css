@@ -60,10 +60,6 @@ em {
 }
 /*********************************website*********************************/
 @media (min-width: 800px) {
-  img {
-    max-width: 800px;
-    margin: 0 auto; /* centrerer  */
-  }
   p,
   em {
     max-width: 500px;
