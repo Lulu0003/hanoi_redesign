@@ -40,6 +40,7 @@ body {
 /*   background-color: #fff8f0; (beige)*/
 
 h1 {
+  margin-top: 10%;
   margin-bottom: 2%;
   font-size: 45px;
   text-align: center;
@@ -226,7 +227,7 @@ body {
 footer {
   padding: 10px 0;
   text-align: center;
-  background-color: #a20d16;
+  background-color: #590005;
   margin: 10px;
   color: white;
 }
@@ -260,7 +261,7 @@ footer {
 }
 
 .footer-links:hover {
-  color: #96b46b;
+  color: #ffdf93;
   cursor: pointer;
 }
 
