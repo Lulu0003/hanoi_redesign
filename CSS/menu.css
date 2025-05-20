@@ -112,6 +112,58 @@ nav {
   }
 }
 
+/************************ FOOTER *********************************/
+/* FOOTER*/
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #a20d16;
+  margin: 10px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.footer-info {
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+
+.footer-links {
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.footer-links:hover {
+  color: #96b46b;
+  cursor: pointer;
+}
+
+/**** til mobil, den her query driller ***/
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 /********************* STYLING AF GRID 1-1 **************************/
 h1 {
   margin-top: 2rem;
@@ -306,7 +358,40 @@ h2 {
   margin-bottom: 4rem;
 }
 
+/********************** GRID_1-1-1-1 **********************/
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.beverages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/**************** GRID_1-1-1-1 BILLEDESTYLING *****************/
+.smoothiebillede {
+  width: 275px;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.mojitobillede {
+  width: 275px;
+  height: 310px;
+}
+
 @media (min-width: 800px) {
+  /*** footer til computer ***/
+  .footer-links {
+    text-align: center;
+    margin-top: 70px;
+  }
+
   .grid1-1 {
     flex-direction: row; /* lig på linje */
     justify-content: center; /* centrer links */
