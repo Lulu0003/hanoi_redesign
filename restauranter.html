@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/restauranter.css" />
     <title>Restauranter</title>
   </head>
@@ -11,41 +18,59 @@
       <section class="intro">
         <div class="overlay">
           <h1>Restauranter</h1>
-          <p>“Authentic Vietnamese cuisine, freshly prepared using quality raw ingredients”</p>
+          <p>Authentic vietnamese cuisine, freshly prepared using quality raw ingredients</p>
         </div>
       </section>
 
       <div class="restaurant-container">
         <section class="restaurant bg1">
           <h2>Hanoi Alley - Nørrebro</h2>
-          <div class="info">
-            <img src="restauranter-billeder/pin.svg" alt="pin_asset" />
-            <p>Nørrebrogade 62A, 2200 København N</p>
+          <div>
+            <div class="info">
+              <img src="restauranter-billeder/pin.svg" alt="pin_asset" />
+              <p>Nørrebrogade 62A, 2200 København N</p>
+            </div>
+            <div class="info">
+              <img src="restauranter-billeder/timer.svg" alt="timer_asset" />
+              <p>Monday - Sunday: 11.30 -21.30</p>
+            </div>
+            <button id="order-button">Order now</button>
           </div>
-          <div class="info">
-            <img src="restauranter-billeder/timer.svg" alt="timer_asset" />
-            <p>Monday - Sunday: 11.30 -21.30</p>
-          </div>
-          <button id="order-button">Order now</button>
         </section>
 
         <section class="restaurant bg2">
           <h2>Hanoi Alley - Indre by</h2>
-          <div class="info">
-            <img src="restauranter-billeder/pin.svg" alt="pin_asset" />
-            <p>Store Kongensgade 24, 1254 København</p>
+          <div>
+            <div class="info">
+              <img src="restauranter-billeder/pin.svg" alt="pin_asset" />
+              <p>Store Kongensgade 24, 1254 København</p>
+            </div>
+            <div class="info">
+              <img src="restauranter-billeder/timer.svg" alt="timer_asset" />
+              <p>Monday - Sunday: 11.30 -21.30</p>
+            </div>
+            <button id="order-button">Order now</button>
           </div>
-          <div class="info">
-            <img src="restauranter-billeder/timer.svg" alt="timer_asset" />
-            <p>Monday - Sunday: 11.30 -21.30</p>
-          </div>
-          <button id="order-button">Order now</button>
         </section>
       </div>
+
       <div class="kort">
         <img src="restauranter-billeder/2.png" alt="kort over restauranter" class="map-image" />
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <h2>Hanoi Alley</h2>
+          <p>Email: Hanoialley@gmail.com</p>
+          <p>Telefon: +45 93 88 98 89</p>
+          <p>Åbent alle hverdage mellem 11.30-21.30</p>
+        </div>
+        <div class="footer-links">
+          <p>Privatlivspolitik</p>
+          <p>Generelle Betingelser</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
