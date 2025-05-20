@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #fff8f0;
+  color: #2c2c2c;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hero */
+.hero {
+  padding: 40px 0;
+  background-image: url(/restauranter-billeder/index.png);
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.primary {
+  background-color: #900d0d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* About */
+.about {
+  padding: 40px 20px;
+}
+
+.p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 20%;
+  font-size: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Restaurants */
+.restaurants {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.restaurant-card {
+  background: white;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.order {
+  background-color: #aac882;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .primary {
+    margin: 0 10px;
+  }
+
+  .restaurant-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* FOOTER*/
+/* FOOTER*/
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #a20d16;
+  margin: 10px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.footer-info {
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.footer-img {
+  max-width: 120px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.footer-links {
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.footer-links:hover {
+  color: #96b46b;
+  cursor: pointer;
+}
+
+/**** til mobil, den her query driller ***/
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*** til computer ***/
+@media (min-width: 800px) {
+  .footer-links {
+    text-align: center;
+    margin-top: 70px;
+  }
+}
