@@ -9,24 +9,53 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/hanoi-logo.png" alt="Logo" />
+          </a>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="restauranter.html">Our restaurants</a></li>
+          <li><a href="om.html">About us</a></li>
+          <li><a href="kontakt.html">Contact</a></li>
+          <li><a href="catering.html">Catering</a></li>
+        </ul>
+
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
     <main>
-      <h1>Hanoi Alley</h1>
       <section class="hero">
         <button class="primary">Takeaway</button>
         <button class="primary">Book Table</button>
       </section>
       <section class="about">
         <h2>About Hanoi Alley</h2>
-        <p>At Hanoi Alley, we offer an authentic and intimate environment – a cozy living room with a small menu, where you’ll find the most authentic Vietnamese foods, made with love and dedication.</p>
+        <p class="p_info">At Hanoi Alley, we offer an authentic and intimate environment – a cozy living room with a small menu, where you’ll find the most authentic Vietnamese foods, made with love and dedication.</p>
         <div class="buttons">
           <button class="primary">Menu</button>
           <button class="primary">Contact</button>
           <button class="primary">Catering</button>
         </div>
       </section>
+      <section class="desktop-gallery">
+        <img src="index-billeder/food1.png" alt="Food 1" />
+        <img src="index-billeder/food2.png" alt="Food 2" />
+        <img src="index-billeder/food3.png" alt="Food 3" />
+        <img src="index-billeder/food4.png" alt="Food 4" />
+      </section>
       <section class="restaurants">
         <h2>Restaurants</h2>
-        <p>Hanoi Alley is the perfect fusion of authentic vietnamese cuisine in the heart of cph.</p>
+        <p class="p_info">Hanoi Alley brings the vibrant flavors of authentic Vietnamese cuisine to the heart of Copenhagen. With two unique locations in Nørrebro and Indre By, both restaurants offer cozy indoor seating, relaxed outdoor dining, and convenient takeaway or home delivery through Wolt.</p>
+        <p class="p_info">Scroll down to find the exact addresses and choose your next culinary destination!</p>
 
         <div class="restaurant-list">
           <div class="restaurant-card">
@@ -65,4 +94,5 @@
       </footer>
     </main>
   </body>
+  <script src="js/menu.js"></script>
 </html>

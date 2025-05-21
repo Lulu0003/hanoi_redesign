@@ -12,13 +12,52 @@ body {
   padding: 20px;
 }
 
+/* forside */
+
+.desktop-gallery {
+  display: none;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.desktop-gallery img {
+  width: 270px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Only show on screens wider than 768px (i.e., desktop or tablets in landscape) */
+@media screen and (min-width: 768px) {
+  .desktop-gallery {
+    display: flex;
+  }
+}
+
 /* Hero */
 .hero {
   padding: 40px 0;
   background-image: url(/restauranter-billeder/index.png);
-  height: 300px;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+  }
 }
 
 h1 {
@@ -29,6 +68,10 @@ h1 {
 h2 {
   margin-bottom: 15px;
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 .primary {
@@ -44,14 +87,24 @@ h2 {
 
 /* About */
 .about {
-  padding: 40px 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
-.p {
-  max-width: 600px;
-  margin: 0 auto 30px;
-  line-height: 20%;
-  font-size: 2rem;
+.p_info {
+  max-width: 400px;
+  margin: 0 auto 10px;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+@media screen and (min-width: 768px) {
+  .p_info {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 190%;
+  }
 }
 
 .buttons {
@@ -61,19 +114,30 @@ h2 {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .buttons {
+    display: none;
+  }
+}
+
 /* Restaurants */
 .restaurants {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .restaurant-card {
   background: white;
-  margin: 20px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   overflow: hidden;
   max-width: 400px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-card {
+    margin: 50px;
+  }
 }
 
 .restaurant-card img {
@@ -83,6 +147,7 @@ h2 {
 
 .card-info {
   padding: 20px;
+  line-height: 140%;
 }
 
 .order {
@@ -131,7 +196,7 @@ h2 {
 footer {
   padding: 10px 0;
   text-align: center;
-  background-color: #a20d16;
+  background-color: #590005;
   margin: 10px;
   color: white;
 }
@@ -166,12 +231,12 @@ footer {
 .footer-links {
   display: block;
   text-decoration: underline;
-  margin-bottom: 5px;
+  margin-bottom: 40px;
   transition: 0.3s;
 }
 
 .footer-links:hover {
-  color: #96b46b;
+  color: #ffdf93;
   cursor: pointer;
 }
 
