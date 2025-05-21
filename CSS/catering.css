@@ -1,0 +1,78 @@
+/*************** Reset *********************/
+
+* {
+  margin: 0px;
+  padding-block: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  margin-block: 31px;
+}
+.indhold {
+  text-align: center;
+}
+
+.madbord {
+  width: 100%;
+  position: relative; /* Gør det muligt at placere elementer indeni */
+}
+
+button {
+  margin-block: 20px;
+}
+
+.stemning {
+  width: 110%;
+  margin-block: 40px;
+}
+
+p,
+em {
+  line-height: 2rem;
+  padding: 15px;
+}
+
+.frase {
+  margin-block: 5%;
+}
+
+/********Galleri***********/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+  gap: 7px; /* afstand mellem billeder */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*********************************website*********************************/
+@media (min-width: 800px) {
+  p,
+  em {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: large;
+    line-height: 3rem;
+  }
+  h1 {
+    font-size: xx-large;
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
