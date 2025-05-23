@@ -38,7 +38,7 @@ body {
 /* Hero */
 .hero {
   padding: 40px 0;
-  background-image: url(/restauranter-billeder/index.png);
+  background-image: url(../restauranter-billeder/index.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

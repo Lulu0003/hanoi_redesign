@@ -188,11 +188,11 @@ body {
   }
 
   .restaurant.bg1 {
-    background-image: url(/restauranter-billeder/hanoi_1.png);
+    background-image: url(../restauranter-billeder/hanoi_1.png);
   }
 
   .restaurant.bg2 {
-    background-image: url(/restauranter-billeder/hanoi_2.png);
+    background-image: url(../restauranter-billeder/hanoi_2.png);
   }
 
   .forside_billede {
