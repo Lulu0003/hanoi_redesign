@@ -26,7 +26,7 @@ html {
 
 h1 {
   font-family: var(--font-primary);
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 h2 {
   font-family: var(--font-primary);
@@ -41,7 +41,7 @@ h3 {
 
 p {
   font-family: var(--font-text);
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 a {
@@ -53,6 +53,19 @@ body {
   background-color: var(--baggrund);
 }
 
+/*** Knap class *****/
+
+.primary {
+  background-color: #900d0d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /***************** Header *****************/
 
 header {
@@ -60,6 +73,7 @@ header {
   top: 0;
   padding: 20px;
   background-color: var(--mørkerød);
+  z-index: 10;
 }
 
 .logo img {
@@ -165,5 +179,76 @@ nav .menu a.active {
   }
   nav .menu a {
     color: var(--grå);
+  }
+}
+
+/* FOOTER*/
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #590005;
+  margin: 10px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.footer-info {
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+
+.footer-links {
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.footer-links:hover {
+  color: #ffdf93;
+  cursor: pointer;
+}
+
+.p_footer {
+  line-height: 1.7rem;
+}
+
+.h2_footer {
+  margin-bottom: 20px;
+}
+
+/**** til mobil, den her query driller ***/
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*** til computer ***/
+@media (min-width: 800px) {
+  .footer-links {
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .p_footer {
+    line-height: 1.7rem;
   }
 }
