@@ -66,6 +66,7 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .primary {
@@ -88,16 +89,16 @@ h3 {
 .p_info {
   max-width: 400px;
   margin: 0 auto 10px;
+  line-height: 2.5rem;
   font-size: 1rem;
-  line-height: 160%;
 }
 
 @media screen and (min-width: 768px) {
   .p_info {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
+    line-height: 2.5rem;
     font-size: 1rem;
-    line-height: 190%;
   }
 }
 
