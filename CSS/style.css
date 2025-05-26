@@ -51,6 +51,7 @@ a {
 
 body {
   background-color: var(--baggrund);
+  padding: 20px;
 }
 
 /*** Knap class *****/

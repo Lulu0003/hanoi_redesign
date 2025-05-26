@@ -63,7 +63,7 @@ p {
 }
 
 #pynt3 {
-  width: 20%;
+  width: 15%;
   position: absolute;
   top: 350px;
   left: 20px;
@@ -71,7 +71,7 @@ p {
 }
 
 #pynt4 {
-  width: 20%;
+  width: 15%;
   position: absolute;
   top: 40px;
   left: 20px;
@@ -87,15 +87,15 @@ p {
 }
 
 #pynt6 {
-  width: 13%;
+  width: 10%;
   position: absolute;
   top: 100px;
-  right: 34px;
+  right: 25px;
   background-image: url(img/pynt6.webp);
 }
 
 #pynt7 {
-  width: 20%;
+  width: 12%;
   position: absolute;
   top: 850px;
   right: 34px;
@@ -103,7 +103,7 @@ p {
 }
 
 #pynt8 {
-  width: 20%;
+  width: 12%;
   position: absolute;
   top: 1075px;
   right: 20px;
@@ -112,49 +112,49 @@ p {
 
 @media (min-width: 800px) {
   #pynt1 {
-    width: 5%;
+    width: 4%;
     top: 650px;
     left: 200px;
   }
 
   #pynt2 {
-    width: 5%;
+    width: 4%;
     top: 550px;
     right: 200px;
   }
 
   #pynt3 {
-    width: 10%;
+    width: 7%;
     top: 350px;
     left: 300px;
   }
 
   #pynt4 {
-    width: 10%;
-    top: 110px;
-    left: 10%;
+    width: 7%;
+    top: 140px;
+    left: 12%;
   }
 
   #pynt5 {
-    width: 5%;
+    width: 6%;
     top: 1100px;
     left: 300px;
   }
 
   #pynt6 {
-    width: 5%;
+    width: 4%;
     top: 130px;
     right: 330px;
   }
 
   #pynt7 {
-    width: 10%;
+    width: 6%;
     top: 850px;
     right: 300px;
   }
 
   #pynt8 {
-    width: 10%;
+    width: 6%;
     top: 1200px;
     right: 200px;
   }
