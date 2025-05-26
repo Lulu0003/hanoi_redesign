@@ -49,12 +49,50 @@ img {
     display: block;
     height: 450px;
     width: 370px;
+    align-items: center;
   }
+  .om {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+  }
+  .flex_omhanoi {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    padding-bottom: 3rem;
+  }
+
+  .flex_omhanoi img {
+    width: 300px;
+    height: auto;
+    border-radius: 2px;
+  }
+
   .grid1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 150px;
+    display: flex;
+    max-width: 1100px;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
   }
+
+  .grid1-1 .tekst {
+    flex: 1;
+    max-width: 340px;
+  }
+
+  .intro .billede-1 {
+    flex: 1;
+  }
+
+  .intro .billede-1 img {
+    display: block;
+    border-radius: 8px;
+  }
+
   .footer-links {
     text-align: center;
     margin-top: 70px;
