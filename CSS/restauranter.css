@@ -65,21 +65,21 @@ em {
   text-align: center;
 }
 
-#order-button {
+#order-button:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.order-button {
   background-color: #aac882;
   color: white;
   border: none;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 15px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  margin-bottom: 25px;
-  margin-top: 20px;
-}
-
-.order-button:hover {
-  background-color: #96b46b;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .map-image {
@@ -116,24 +116,6 @@ body {
 .restaurant:hover {
   transform: scale(1.03);
   box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.2);
-}
-
-#order-button:hover {
-  background-color: #96b46b;
-  transform: scale(1.05);
-}
-
-#order-button {
-  background-color: #aac882;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 15px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* NEW */
-  transition: all 0.3s ease;
 }
 
 .kort {
@@ -183,7 +165,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-height: 300px;
     background-size: cover;
-    width: 30%;
+    width: 35%;
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -206,7 +188,7 @@ body {
   .restaurant h2,
   .restaurant .info,
   .restaurant button {
-    padding: 6px;
+    padding: 10px;
     color: white;
     max-width: 80%;
     margin-left: auto;
