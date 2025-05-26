@@ -1,159 +1,5 @@
-/*********************** BURGERMENU **************************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  margin-right: 20px;
-}
-
-.menu li:last-child {
-  margin-right: 0;
-}
-
-.menu a {
-  display: block;
-  padding: 10px;
-  color: #333333;
-  text-decoration: none;
-  transition: color 0.3s;
-  text-align: end;
-}
-
-.menu a:hover {
-  color: #ff0000;
-}
-
-.burger {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.burger .line {
-  width: 100%;
-  height: 2px;
-  background-color: #333333;
-  margin-bottom: 5px;
-  transition: 0.2s linear;
-}
-.burger {
-  display: none;
-}
-@media screen and (max-width: 800px) {
-  .menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-  }
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
-  }
-
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-
-  nav.active .menu {
-    display: block;
-    background-color: #ffffff;
-    position: absolute;
-    top: 94px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
-  nav.active .menu a {
-    font-size: 24px;
-  }
-}
-
-/************************ FOOTER *********************************/
-/* FOOTER*/
-
-footer {
-  padding: 10px 0;
-  text-align: center;
-  background-color: #a20d16;
-  margin: 10px;
-  color: white;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  padding: 10px 20px;
-  transition: 0.3s;
-  padding: 10px 20px;
-  margin: 0 auto;
-}
-
-.footer-logo {
-  font-size: 24px;
-  transition: 0.3s;
-}
-
-.footer-info {
-  transition: 0.3s;
-  margin-bottom: 40px;
-}
-
-.footer-links {
-  display: block;
-  text-decoration: underline;
-  margin-bottom: 40px;
-  transition: 0.3s;
-}
-
-.footer-links:hover {
-  color: #96b46b;
-  cursor: pointer;
+body {
+  background-color: #fff8f0;
 }
 
 /**** til mobil, den her query driller ***/
@@ -166,16 +12,17 @@ footer {
 
 /********************* STYLING AF GRID 1-1 **************************/
 h1 {
+  display: flex;
   margin-top: 2rem;
-  margin-left: 3rem;
+  justify-content: center; /* centrerer vandret */
 }
 
 h2 {
   display: flex;
   justify-content: center; /* centrerer vandret */
   align-items: center; /* centrerer lodret */
-  margin-top: -1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .startersimg {
@@ -187,10 +34,28 @@ h2 {
   margin-bottom: 4rem;
 }
 
+.primary {
+  /* Kunne også lave en flex for at flytte det i midten*/
+  display: block; /* gør det muligt at centrere med margin */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  background-color: #900d0d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary:hover {
+  box-shadow: 5px 18px 20px rgba(0, 0, 0, 0.2);
+}
+
 /***************** GRID 1-1 TEKSTSTYLING ********************/
 .vandret-streg {
   height: 1px;
-  background-color: rgb(128, 15, 15);
+  background-color: #a20d16;
   width: 100vw; /* 100% af skærmbredden */
   margin: 40px 0;
 }
@@ -243,7 +108,68 @@ h2 {
 
 .fororsrullebillede {
   width: 265px;
-  height: 250px;
+  height: auto;
+}
+
+/** HOVER EFFEKT PÅ BILLEDER **/
+.fororsrullebillede:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.baobillede:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.rispapirsbillede:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.brodbillede:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.bowlbillede:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.kødretbillede {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.kødrullebillede {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.risretbillede {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.smoothiebillede:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.mojitobillede {
+  transform: scale(1.03);
+  box-shadow: 0px 18px 28px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 /******** BILLEDE UNDERTEKST ********/
@@ -290,12 +216,8 @@ h2 {
   display: block; /* gør det muligt at centrere med margin */
   margin-left: auto;
   margin-right: auto;
-  max-width: 45%;
-  height: auto;
-  margin-bottom: 4rem;
-  width: 100%;
-  height: auto;
   max-width: 400px;
+  margin-bottom: 2rem;
 }
 
 .grid_1-1-1 {
@@ -358,31 +280,49 @@ h2 {
   margin-bottom: 4rem;
 }
 
-/********************** GRID_1-1-1-1 **********************/
-.grid_1-1-1-1 {
+/********************** GRID_1-1-1- **********************/
+.grid_1-1-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.beverages {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+.risundertekst {
+  margin-bottom: 3rem;
 }
 
 /**************** GRID_1-1-1-1 BILLEDESTYLING *****************/
+.grid_1-1-1-1 > div {
+  display: flex; /* Bruger flexbox til at styre indholdet i hver boks */
+  flex-direction: column; /* Sørger for, at billedet står over teksten (vertikalt) */
+  align-items: center; /* Centrerer indholdet horisontalt */
+}
+
 .smoothiebillede {
   width: 275px;
   height: auto;
   margin-left: 1rem;
 }
 
+.smoothieundertekst {
+  font-size: 1rem;
+}
+
+.smoothundertekst {
+  font-size: 0.8rem;
+}
+
 .mojitobillede {
   width: 275px;
   height: 310px;
+}
+
+.mojitotekst {
+  font-size: 1rem;
+}
+
+.mijitoundertekst {
+  font-size: 0.8rem;
 }
 
 @media (min-width: 800px) {
@@ -413,5 +353,17 @@ h2 {
 
   .startersimg {
     display: none;
+  }
+
+  .maincoursebillede {
+    display: none;
+  }
+
+  .beefwrappedundertekst {
+    margin-bottom: 2rem;
+  }
+
+  .primary {
+    margin-bottom: 3rem;
   }
 }
