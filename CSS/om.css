@@ -11,6 +11,14 @@ img {
 }
 
 /*************** Mobil ********************/
+.om_container h1 {
+  margin-bottom: 12px;
+}
+
+.om_container .om p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 .computer-billede {
   display: none;
 }
@@ -28,16 +36,9 @@ img {
   padding: 38px;
 }
 
-.om_side,
-p,
-a,
-img {
-  margin-bottom: 12px;
-  margin-top: 12px;
-}
-
 .om_side a {
   color: var(--grå);
+  font-size: 1.1rem;
 }
 
 /****************** Computer ***************/
@@ -50,6 +51,7 @@ img {
     height: 450px;
     width: 370px;
     align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   .om {
     max-width: 800px;
@@ -60,7 +62,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     padding-bottom: 3rem;
   }
 
@@ -73,7 +75,7 @@ img {
   .grid1-1 {
     display: flex;
     max-width: 1100px;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     gap: 2rem;
     padding: 1rem;
     justify-content: center;
@@ -81,7 +83,7 @@ img {
 
   .grid1-1 .tekst {
     flex: 1;
-    max-width: 340px;
+    max-width: 320px;
   }
 
   .intro .billede-1 {
@@ -91,6 +93,7 @@ img {
   .intro .billede-1 img {
     display: block;
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .footer-links {
