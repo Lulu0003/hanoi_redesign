@@ -12,8 +12,9 @@ body {
 
 /********************* STYLING AF GRID 1-1 **************************/
 h1 {
+  display: flex;
   margin-top: 2rem;
-  margin-left: 3rem;
+  justify-content: center; /* centrerer vandret */
 }
 
 h2 {
@@ -279,18 +280,15 @@ h2 {
   margin-bottom: 4rem;
 }
 
-/********************** GRID_1-1-1-1 **********************/
-.grid_1-1-1-1 {
-  display: flex;
-  flex-direction: row;
+/********************** GRID_1-1-1- **********************/
+.grid_1-1-1 {
+  display: grid;
   justify-content: center;
-  margin-bottom: 2rem;
-  gap: 12rem;
+  gap: 2rem;
 }
 
-.beverages {
-  display: flex;
-  flex-direction: row;
+.risundertekst {
+  margin-bottom: 3rem;
 }
 
 /**************** GRID_1-1-1-1 BILLEDESTYLING *****************/
@@ -363,10 +361,6 @@ h2 {
 
   .beefwrappedundertekst {
     margin-bottom: 2rem;
-  }
-
-  .beverages {
-    display: none;
   }
 
   .primary {
